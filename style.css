@@ -29,8 +29,8 @@ header {
   border-radius: 50%;
   width: 160px;
   height: 160px;
-  border: 4px solid #cabde1;           /* Inner circle */
-  box-shadow: 0 0 0 14px #dbd1eb;      /* Outer circle */
+  border: 9px solid #cabde1;           /* Inner circle */
+  box-shadow: 0 0 0 9px #dbd1eb;      /* Outer circle */
   background: #fff;
   flex-shrink: 0; /* Prevent the image from shrinking */
 }
