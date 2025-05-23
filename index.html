@@ -3,23 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Alice's Portfolio Website</title>
+    <!-- Google Fonts Stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#songs">Songs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <div class="header-box" style="display: flex; align-items: center; gap: 2rem;">
+            <img src="https://via.placeholder.com/100" alt="Profile Placeholder" style="border-radius: 50%; width: 100px; height: 100px;">
+            <div>
+                <h1>Alice Huang</h1>
+                <p>Learn about me and my works here!</p>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
+        <section id="about-me">
             <h2>About Me</h2>
-            <p>This is a brief introduction about myself.</p>
+            <p>I'm a quiet but curious mind who loves building things that speak—whether in code or in language.
+                I enjoy working at the edges where logic meets ambiguity, structure meets intuition.
+                Mostly, I'm just trying to make beautiful things that make sense.</p>
         </section>
-        <section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Here are some of my key skills.</p>
+        </section>
+        <section id="projects">
             <h2>Projects</h2>
             <p>Details about my projects will go here.</p>
         </section>
-        <section>
+        <section id="songs">
+            <h2>Songs</h2>
+            <p>Some of my favorite songs or musical projects.</p>
+        </section>
+        <section id="contact">
             <h2>Contact</h2>
             <p>How to contact me.</p>
         </section>
