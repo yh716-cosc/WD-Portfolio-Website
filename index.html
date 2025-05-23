@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,7 +24,7 @@
     </nav>
     <header>
         <div class="header-box" style="display: flex; align-items: center; gap: 2rem;">
-            <img src="https://via.placeholder.com/100" alt="Profile Placeholder" style="border-radius: 50%; width: 200px; height: 200px;">
+            <img src="self1.jpg" alt="Profile Placeholder" style="border-radius: 50%; width: 200px; height: 200px;">
             <div>
                 <h1>Alice Huang</h1>
                 <p>Learn about me and my works here!</p>
@@ -39,10 +41,44 @@
         <section id="skills">
             <h2>Skills</h2>
             <p>Here are some of my key skills.</p>
+            <div class="skills-row">
+                <div class="skill-box">
+                    <a href="https://fonts.google.com/icons?selected=Material+Symbols+Outlined:html:FILL@0;wght@400;GRAD@0;opsz@24" target="_blank" class="skill-icon-link">
+                        <span class="material-symbols-outlined skill-icon">html</span>
+                    </a>
+                    <div class="skill-text">HTML</div>
+                </div>
+                <div class="skill-box">
+                    <a href="https://fonts.google.com/icons?selected=Material+Symbols+Outlined:css:FILL@0;wght@400;GRAD@0;opsz@24" target="_blank" class="skill-icon-link">
+                        <span class="material-symbols-outlined skill-icon">css</span>
+                    </a>
+                    <div class="skill-text">CSS</div>
+                </div>
+                <div class="skill-box">
+                    <a href="https://fonts.google.com/icons?selected=Material+Symbols+Outlined:javascript:FILL@0;wght@400;GRAD@0;opsz@24" target="_blank" class="skill-icon-link">
+                        <span class="material-symbols-outlined skill-icon">javascript</span>
+                    </a>
+                    <div class="skill-text">JavaScript</div>
+                </div>
+            </div>
         </section>
         <section id="projects">
             <h2>Projects</h2>
-            <p>Details about my projects will go here.</p>
+            <p>Here are some of the fun things that I have built.</p>
+            <div class="projects-row">
+                <div class="project-box">
+                    <h3>Chirpy</h3>
+                    <p>a multi-user online posting service</p>
+                </div>
+                <div class="project-box">
+                    <h3>Chatty</h3>
+                    <p>a multi-user online chatroom</p>
+                </div>
+                <div class="project-box">
+                    <h3>Maxwell</h3>
+                    <p>a fun animated game written by java</p>
+                </div>
+            </div>
         </section>
         <section id="songs">
             <h2>Songs</h2>
@@ -50,7 +86,20 @@
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <p>How to contact me.</p>
+            <div class="contact-row">
+                <div class="contact-box">
+                    <a href="https://www.linkedin.com/in/yixuan-huang-a02364329" target="_blank" class="contact-icon-link">
+                        <i class="fab fa-linkedin fa-2x contact-icon"></i>
+                    </a>
+                    <div class="contact-text">LinkedIn</div>
+                </div>
+                <div class="contact-box">
+                    <a href="https://github.com/yh716-cosc" target="_blank" class="contact-icon-link">
+                        <i class="fab fa-github fa-2x contact-icon"></i>
+                    </a>
+                    <div class="contact-text">GitHub</div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
