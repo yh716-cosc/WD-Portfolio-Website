@@ -16,7 +16,7 @@ header {
 }
 
 .header-box {
-  background-color: #e6e6fa;;
+  background-color: #e6e6fa;
   border: 4px solid #cabde1;
   border-radius: 16px;
   padding: 2.5rem 4rem;
@@ -25,13 +25,33 @@ header {
   align-items: center;
   gap: 2rem;
   justify-content: center;
-  flex-wrap: wrap; /* Allow content to wrap on small screens */
+  flex-wrap: wrap;
+  position: relative; /* Needed for pseudo-element */
+  background-image: url('purple_pattern.png');
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  overflow: hidden;
+}
+
+.header-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #e6e6fa;
+  opacity: 0.7; /* Adjust for desired lightness */
+  pointer-events: none;
+  z-index: 0;
+}
+
+.header-box > * {
+  position: relative;
+  z-index: 1;
 }
 
 .header-box img,
 .song-img {
-  background-color: #fff; /* or #e6e6fa for a lavender tint */
-  opacity: 1;
+  border: 4px solid #7b5ea7; /* darker lavender for testing */
+  box-shadow: 0 0 0 6px #cabde1;
 }
 
 .header-box img {
