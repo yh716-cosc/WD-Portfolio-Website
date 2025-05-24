@@ -1,23 +1,12 @@
 body {
   background-color: #f2f2f2;
-  position: relative;
+  opacity: 1;
   color: #444444;
   font-family: 'Literata', serif;
   text-align: center; /* Center all text */
 }
 
-/* Faded purple pattern background */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-image: url('purple_pattern.png');
-  background-repeat: repeat;
-  background-size: 200px 200px;
-  opacity: 0.2; /* Adjust for desired pattern visibility */
-  pointer-events: none;
-  z-index: 0;
-}
+
 
 header {
   display: flex;
