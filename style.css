@@ -1,8 +1,22 @@
 body {
   background-color: #f2f2f2;
+  position: relative;
   color: #444444;
   font-family: 'Literata', serif;
   text-align: center; /* Center all text */
+}
+
+/* Faded purple pattern background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url('purple_pattern.png');
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  opacity: 0.2; /* Adjust for desired pattern visibility */
+  pointer-events: none;
+  z-index: 0;
 }
 
 header {
@@ -25,13 +39,18 @@ header {
   flex-wrap: wrap; /* Allow content to wrap on small screens */
 }
 
+.header-box img,
+.song-img {
+  background-color: #fff; /* or #e6e6fa for a lavender tint */
+  opacity: 1;
+}
+
 .header-box img {
   border-radius: 50%;
   width: 160px;
   height: 160px;
   border: 9px solid #cabde1;           /* Inner circle */
   box-shadow: 0 0 0 9px #dbd1eb;      /* Outer circle */
-  background: #fff;
   flex-shrink: 0; /* Prevent the image from shrinking */
 }
 
